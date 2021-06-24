@@ -1,0 +1,108 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    margin: 0;padding: 0;
+    background: linear-gradient(120deg , rgb(54, 13, 70),rgb(0,0,0));
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    text-transform: capitalize;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+form{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    margin-top: 3rem;
+}
+form input {
+    width: 30rem;
+    padding: 0.5rem;
+}
+form input , form button{
+    
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+form button{
+    background: rgb(148, 13, 148);
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 3rem;
+}
+
+form button:hover{
+    background: black;
+    color: rgb(138, 12, 138);
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container ul{
+    padding: 0;
+}
+
+div.todo{
+    margin-top: 10px;
+    display: flex;
+    background: white;
+    width: 30rem;
+    justify-content: space-between;
+    min-height: 3rem;
+    
+}
+
+.todo li{
+    padding: 0.5rem;
+    flex:1;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 1.5rem;
+}
+
+.todo-checked{
+  border:none;
+  background: rgb(4, 85, 12);
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.todo-checked:hover{
+    background: limegreen;
+}
+
+.todo.active{
+  text-decoration: line-through;
+}
+
+.todo-delete{
+    border:none;
+    background: rgb(180, 45, 45);
+    padding: 1rem;
+    font-size: 1rem;
+}
+.todo-delete:hover{
+    background: red;
+}
+
+.fa-trash-alt , .fa-check{
+    pointer-events: none;
+}
